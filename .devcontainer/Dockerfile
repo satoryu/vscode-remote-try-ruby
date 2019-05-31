@@ -1,13 +1,11 @@
-#-------------------------------------------------------------------------------------------------------------
-# Copyright (c) Microsoft Corporation. All rights reserved.
-# Licensed under the MIT License. See https://go.microsoft.com/fwlink/?linkid=2090316 for license information.
-#-------------------------------------------------------------------------------------------------------------
-
-FROM ruby:2
+FROM ruby:2.6.3
 
 # Install ruby-debug-ide and debase
 RUN gem install ruby-debug-ide
 RUN gem install debase
+
+# To install the latest version of bundler
+RUN gem install bundler:2.0.1
 
 # Install git, process tools
 RUN apt-get update && apt-get -y install git procps
