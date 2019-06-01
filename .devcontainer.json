@@ -12,7 +12,7 @@
 	// "settings":  { "workbench.colorTheme": "Quiet Light" },
 
 	// Uncomment the next line to run commands after the container is created.
-	"postCreateCommand": "bundle install",
+	// "postCreateCommand": "",
 
 	"extensions": [
 		"rebornix.Ruby"

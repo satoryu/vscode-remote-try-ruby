@@ -7,6 +7,10 @@ RUN gem install debase
 # To install the latest version of bundler
 RUN gem install bundler:2.0.1
 
+COPY Gemfile /root/
+COPY Gemfile.lock /root/
+RUN cd /root/ && bundle install
+
 # Install git, process tools
 RUN apt-get update && apt-get -y install git procps
 
