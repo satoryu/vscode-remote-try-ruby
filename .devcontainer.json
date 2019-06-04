@@ -9,12 +9,16 @@
 	],
 
 	// Uncomment the next line if you want to add in default container specific settings.json values
-	// "settings":  { "workbench.colorTheme": "Quiet Light" },
+	"settings":  {
+		"solargraph.useBundler": true,
+	},
 
 	// Uncomment the next line to run commands after the container is created.
 	// "postCreateCommand": "",
 
 	"extensions": [
-		"rebornix.Ruby"
+		"rebornix.Ruby",
+		"noku.rails-run-spec-vscode",
+		"castwide.solargraph"
 	]
 }
